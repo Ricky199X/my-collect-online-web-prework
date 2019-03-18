@@ -15,7 +15,7 @@ def my_collect(array)
   i = 0
   while i < array.length do
     yield array[i]
-    result << array[i].upcase
+    result << array[i].split(" ").first
     i += 1
   end
   result
